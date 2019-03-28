@@ -137,5 +137,9 @@ h1 {
 .pris {
   color: rgb(35, 35, 35);
   font-size: 18px;
-  padding-bottom: 15px;
+}
+
+.produktrække {
+	border-top: 1px solid black;
+	padding-left: 27px;
 }

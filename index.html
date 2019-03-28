@@ -12,14 +12,16 @@
     
     <img id="logo" src="Logo.png" width="200">
     
-    
     <div class="searchbar">
       <input type="text" placeholder="Søg...">
       
     </div>
     
+	<img id="cart" src="Cart.png" width="70px">
+	
+	<img id="user" src="User.png" width="70px">
     
-    <div class="menu">
+    <div class="menu" >
       <a href="#pibe">Piber</a>
       <a href="#tobak">Tobak</a>
       <a href="#cigar">Cigarer</a>
@@ -30,7 +32,57 @@
     </div>
       
     
-    
+	
+	
+	
+	<div class="slideshow">
+
+		<div class="slide fade">
+			<img src="Poster1.png" height="740px">
+		</div>
+
+		<div class="slide fade">
+			<img src="Poster2.png" height="740px">
+		</div>
+
+		<div class="slide fade">
+			<img src="Poster3.png" height="740px">
+		</div>
+		
+		<div class="slide fade">
+			<img src="Poster4.png" height="740px">
+		</div>
+		
+		<div class="slide fade">
+			<img src="Poster5.png" height="740px">
+		</div>
+		
+		<div class="slide fade">
+			<img src="Poster6.png" height="740px">
+		</div>
+		
+		<div class="slide fade">
+			<img src="Poster7.png" height="740px">
+		</div>
+</div>
+<br>
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 4500);
+}
+</script>
+	
   </body>
   
 </html>

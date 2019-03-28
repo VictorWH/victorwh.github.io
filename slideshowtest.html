@@ -1,0 +1,64 @@
+<style>
+/* Slideshow container */
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow">
+
+<div class="slide fade">
+  <img src="Picture1.jpg" style="width:100%">
+</div>
+
+<div class="slide fade">
+  <img src="Picture2.png" style="width:100%">
+</div>
+
+<div class="slide fade">
+  <img src="Picture3.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 4500);
+}
+</script>

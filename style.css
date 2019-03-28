@@ -21,12 +21,25 @@ h1 {
   padding-bottom:0px;
 }
 
+#cart {
+	position:absolute;
+	right: 25px;
+	top: 20px;
+}
+
+#user {
+	position:absolute;
+	right: 120px;
+	top: 20px;
+}
+
 /* Menuen */
 .menu {
   background-color: dimgrey;
   overflow: hidden;
   width: 100%;
   box-shadow: 0px 2px 5px black;
+  margin-bottom:1px;
 }
 
 /* Links */
@@ -61,5 +74,32 @@ h1 {
   padding: 6px;
   margin-top: 30px;
   margin-right: 50%;
-  font-size: 25px;
+}
+
+.slide {
+	text-align:center;
+}
+
+.slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Slideshow animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }

@@ -1,19 +1,13 @@
-/* https://fonts.google.com */
+/* Hent fonts her: https://fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
 
 body {
-  background-color: white;
+  background-color: rgb(182, 222, 237);
   font-family: "Open Sans", sans-serif;
-  padding: 10px 0px;
   font-size: 18px;
-  margin: 0;
   color: #444;
-}
-
-h1 {
-  font-family: "Merriweather", serif;
-  font-size: 32px;
+  margin: auto;
 }
 
 #logo {
@@ -23,14 +17,29 @@ h1 {
 
 #cart {
 	position:absolute;
-	right: 25px;
-	top: 20px;
+	right: 320px;
+	top: 15px;
 }
 
 #user {
 	position:absolute;
-	right: 120px;
-	top: 20px;
+	right: 410px;
+	top: 15px;
+}
+
+.main {
+	border:dasdhed black;
+	margin: 0px 300px;
+	background-color:white;
+	box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.2);
+	padding: 10px;
+}
+
+.top {
+	bordder:dashed black;
+	padding: 0px 300px;
+	background-color:white;
+	box-shadow: 2px 2px 5px black;
 }
 
 /* Menuen */
@@ -38,8 +47,9 @@ h1 {
   background-color: dimgrey;
   overflow: hidden;
   width: 100%;
-  box-shadow: 0px 2px 5px black;
-  margin-bottom:1px;
+  box-shadow: 2px 2px 5px black;
+  margin-bottom:20px;
+  position: inherit;
 }
 
 /* Links */
@@ -58,15 +68,22 @@ h1 {
   color: black;
 }
 
-/* Farve på linket til den aktive side */
+/* Farve på linket til den aktive side - indsæt: class="aktiv" ved det aktive link */
 .menu a.aktiv {
   background-color: darkred;
   color: white;
 }
 
+/* Venstre side af menuen */
+.left {
+	position:relative;
+	left: 300px;
+}
+
+/* Højre side af menuen */
 .right {
   position: absolute;
-  right: 0px;
+  right: 300px;
 }
 
 .searchbar {
@@ -102,4 +119,23 @@ h1 {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+h1 {
+	font-size: 20px;
+}
+
+.kort {
+  padding-top: 15px;
+  box-shadow: 1px 1px 5px black;
+  max-width: 200px;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.pris {
+  color: rgb(35, 35, 35);
+  font-size: 18px;
+  padding-bottom: 15px;
 }

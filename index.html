@@ -1,88 +1,140 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jysk Tobaksalg - Forside</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  
-  <body>
-    
-    <img id="logo" src="Logo.png" width="200">
-    
-    <div class="searchbar">
-      <input type="text" placeholder="Søg...">
-      
-    </div>
-    
-	<img id="cart" src="Cart.png" width="70px">
-	
-	<img id="user" src="User.png" width="70px">
-    
-    <div class="menu" >
-      <a href="#pibe">Piber</a>
-      <a href="#tobak">Tobak</a>
-      <a href="#cigar">Cigarer</a>
-      <a href="#cigaret">Cigaretter</a>
-      <a href="#tilbehør">Tilbehør</a>
-      <div class="right"><a href="#om-os">Om os</a>
-      <a href="#kontakt">Kontakt</a></div>
-    </div>
-      
-    
-	
-	
-	
-	<div class="slideshow">
 
-		<div class="slide fade">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jysk Tobaksalg - Forside</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+	<div class="top">
+		<a href="#index"><img id="logo" src="Logo.png" width="200"></a>
+
+
+		<div class="searchbar">
+			<input type="text" placeholder="Søg...">
+		</div>
+
+
+		<div>
+			<img id="cart" src="Cart.png" width="70px">
+			<img id="user" src="User.png" width="70px">
+		</div>
+	</div>
+
+
+	<div class="menu" >
+	
+		<div class="left">
+			<a href="#pibe">Piber</a>
+			<a href="#tobak">Tobak</a>
+			<a href="#cigar">Cigarer</a>
+			<a href="#cigaret">Cigaretter</a>
+			<a href="#tilbehør">Tilbehør</a>
+		</div>
+		
+		<div class="right">
+			<a href="#om-os">Om os</a>
+			<a href="#kontakt">Kontakt</a>
+		</div>
+		
+	</div>
+
+
+	<div class="main">
+	
+
+		<div class="slideshow">
+
+			<div class="slide fade">
 			<img src="Poster1.png" height="740px">
-		</div>
+			</div>
 
-		<div class="slide fade">
+			<div class="slide fade">
 			<img src="Poster2.png" height="740px">
-		</div>
+			</div>
 
-		<div class="slide fade">
+			<div class="slide fade">
 			<img src="Poster3.png" height="740px">
-		</div>
-		
-		<div class="slide fade">
-			<img src="Poster4.png" height="740px">
-		</div>
-		
-		<div class="slide fade">
-			<img src="Poster5.png" height="740px">
-		</div>
-		
-		<div class="slide fade">
-			<img src="Poster6.png" height="740px">
-		</div>
-		
-		<div class="slide fade">
-			<img src="Poster7.png" height="740px">
-		</div>
-</div>
-<br>
-    <script>
-var slideIndex = 0;
-showSlides();
+			</div>
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1} 
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(showSlides, 4500);
-}
-</script>
+			<div class="slide fade">
+			<img src="Poster4.png" height="740px">
+			</div>
+
+			<div class="slide fade">
+			<img src="Poster5.png" height="740px">
+			</div>
+
+			<div class="slide fade">
+			<img src="Poster6.png" height="740px">
+			</div>
+
+			<div class="slide fade">
+			<img src="Poster7.png" height="740px">
+			</div>
+		</div>
+		<br>
+				<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("slide");
+				for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none"; 
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) {slideIndex = 1} 
+				slides[slideIndex-1].style.display = "block"; 
+				setTimeout(showSlides, 8000);
+				}
+				</script>
+
+
+		<div class="produktrække">
+		
+			<div class="kort">
+				<img src="./Produkter/Orlik_GoldenSliced.jpg" width="200px">
+				<h1>Orlik Golden Sliced</h1>
+				<p class="pris">695,-</p>
+			</div>
+		
+			<div class="kort">
+				<img src="./Produkter/Orlik_RacingGreen.jpg" width="200px">
+				<h1>Orlik Racing Green</h1>
+				<p class="pris">400,-</p>
+			</div>
+		
+			<div class="kort">
+				<img src="./Produkter/Mars_CosmosPibe.jpg" width="200px">
+				<h1>Mars Cosmos Pibe</h1>
+				<p class="pris">285,-</p>
+			</div>
+		
+			<div class="kort">
+				<img src="./Produkter/BensonHedges_Gold.png" width="200px">
+				<h1>Benson & Hedges Gold</h1>
+				<p class="pris">450,-</p>
+			</div>
+			
+			<div class="kort">
+				<img src="./Produkter/WØLarsen_Signature.jpg" width="200px">
+				<h1>W.Ø Larsen Signature</h1>
+				<p class="pris">250,-</p>
+			</div>
+			
+		</div>
+
+
+	</div>
 	
-  </body>
-  
+	
+</body>
+
 </html>
